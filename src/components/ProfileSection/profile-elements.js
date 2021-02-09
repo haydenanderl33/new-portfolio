@@ -8,9 +8,11 @@ export const ProfileContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    height: 576px;
   }
 `;
 export const ImageWrapper = styled.div`
@@ -37,6 +39,7 @@ export const ProfileImg = styled.img`
 `;
 export const ProfileInfo = styled.div`
   display: flex;
+  padding: 16px 24px;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -56,4 +59,5 @@ export const ProfileH1 = styled.h1`
 `;
 export const ProfileAbout = styled.p`
   color: #f8f7f9;
+  max-width:480px;
 `;
