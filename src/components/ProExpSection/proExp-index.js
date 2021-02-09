@@ -14,7 +14,7 @@ import {
 
 const ProExp = ({company, position, startMonth, startYear, endMonth, endYear, exp1, exp2, exp3}) => {
   return (
-    <ProExpContainer>
+    <ProExpContainer id='resume'>
       <ProExpInfoContainer>
         <ProExpInfoWrapper>
           <ProExpNameH3>{company}</ProExpNameH3>

@@ -4,10 +4,9 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #19323c;
-  /* background: ${({ scrollNav }) =>
-    scrollNav ? "#19323C" : "transparent"} */
+  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#19323C" )};
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +14,10 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+
+  @media screen and (max-width: 768px) {
+    background: #19323C;
+  }
 `;
 export const NavContainer = styled.div`
   display: flex;
@@ -37,8 +40,9 @@ export const NavLogo = styled(LinkRoute)`
   text-decoration: none;
 
   &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #92DCE5;  }
+    transition: all 0.2s ease-in-out;
+    color: #92dce5;
+  }
 `;
 export const MobileIcon = styled.div`
   display: none;
@@ -54,8 +58,9 @@ export const MobileIcon = styled.div`
     cursor: pointer;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #92DCE5;  }
+      transition: all 0.2s ease-in-out;
+      color: #92dce5;
+    }
   }
 `;
 export const NavMenu = styled.ul`
@@ -82,36 +87,37 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-      border-bottom: 3px solid #F9627D
+    border-bottom: 3px solid #f9627d;
   }
   &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #92DCE5;  }
+    transition: all 0.2s ease-in-out;
+    color: #92dce5;
+  }
 `;
 export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 export const NavBtnLink = styled(LinkRoute)`
-    border-radius: 50px;
-    color: #f8f7f9;
-    background: #7A82AB;
-    white-space: nowrap;
-    padding: 10px 22px;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
+  border-radius: 50px;
+  color: #f8f7f9;
+  background: #7a82ab;
+  white-space: nowrap;
+  padding: 10px 22px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #F9627D;
-        color: #19323C;   }
-`
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #f9627d;
+    color: #19323c;
+  }
+`;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProExpContainer = styled.div`
-  height: 326px;
+  height: 356px;
   width: 100%;
   background: none;
   display: flex;
@@ -15,13 +15,15 @@ export const ProExpContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: 480px;
+    height: 500px;
+    padding: 0 16px;
+    background: #7a82ab;
   }
 `;
 
 export const ProExpInfoContainer = styled.div`
   height: 100%;
-  width: 50%;
+  width: 40%;
   background: #7a82ab;
   display: flex;
   flex-direction: row;
@@ -60,7 +62,7 @@ export const ProExpNameH3 = styled.h3`
 `;
 export const ProExpDescriptionContainer = styled.div`
   height: 100%;
-  width: 50%;
+  width: 60%;
   background: #7a82ab;
   display: flex;
   align-items: center;
@@ -86,15 +88,17 @@ export const ProExpDescriptionPositionH3 = styled.h3`
   margin-bottom: 24px;
 `;
 export const ProExpDescriptionDate = styled.div`
-/* color: #19323C;
-font-weight: bold; */
   font-size: 20px;
   font-family: "Encode Sans Condensed", sans-serif;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 36px;
+  }
 `;
 export const ProExpDescriptionBulletWrapper = styled.ul`
   height: 100px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -103,10 +107,9 @@ export const ProExpDescriptionBulletWrapper = styled.ul`
   list-style: circle;
 
   @media screen and (max-width: 768px) {
-    margin-left: 0;
+    margin-left: 48px;
     width:80%;
   }
 `;
 export const ProExpDescriptionBullet = styled.li`
-margin-bottom: 8px;
 `;

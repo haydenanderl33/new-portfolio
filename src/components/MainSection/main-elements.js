@@ -10,6 +10,9 @@ export const MainContainer = styled.div`
     height: 1100px;
     position: relative;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+        height: 760px;
+  }
 `
 export const MainBackground = styled.div`
     position: absolute;

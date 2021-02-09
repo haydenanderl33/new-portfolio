@@ -19,10 +19,10 @@ const MobileMenuPage = (props) => {
         </Icon>
         <MobileMenuWrapper>
           <MobileMenu>
-            <MobileMenuLink to="about">About</MobileMenuLink>
-            <MobileMenuLink to="resume">Resume</MobileMenuLink>
-            <MobileMenuLink to="skills">Skills</MobileMenuLink>
-            <MobileMenuLink to="projects">Projects</MobileMenuLink>
+            <MobileMenuLink to="about" onClick={props.toggle} >About</MobileMenuLink>
+            <MobileMenuLink to="resume" onClick={props.toggle} >Resume</MobileMenuLink>
+            <MobileMenuLink to="skills" onClick={props.toggle} >Skills</MobileMenuLink>
+            <MobileMenuLink to="projects" onClick={props.toggle} >Projects</MobileMenuLink>
           </MobileMenu>
         <MobileMenuBtnWrap>
           <MobileMenuRoute to="/contact">Contact</MobileMenuRoute>

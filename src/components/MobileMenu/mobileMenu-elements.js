@@ -11,7 +11,7 @@ export const MobileMenuContainer = styled.aside`
   background: #7a82ab;
   display: grid;
   align-items: center;
-  bottom: 0;
+  /* bottom: 0; */
   right: 0;
   justify-content: center;
   transition: 0.3s ease-in-out;

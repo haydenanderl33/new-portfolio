@@ -11,7 +11,7 @@ import profileImg from '../myImages/haydenprofilepic.jpg'
 
 const Profile = ({about}) => {
   return (
-    <ProfileContainer>
+    <ProfileContainer id='about'>
       <ImageWrapper>
         <ProfileImg src={profileImg} alt='Profile Picture'/>
       </ImageWrapper>

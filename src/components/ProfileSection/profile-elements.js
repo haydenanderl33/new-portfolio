@@ -36,6 +36,12 @@ export const ProfileImg = styled.img`
   width: 250px;
   padding: 16px 24px;
   border-radius: 50%;
+
+  @media screen and (max-width: 768px) {
+    height: 200px;
+  width: 200px;
+  padding: 16px 24px;
+  }
 `;
 export const ProfileInfo = styled.div`
   display: flex;

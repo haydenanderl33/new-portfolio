@@ -19,3 +19,35 @@ export const workExp1 = {
     exp2:'Built React.js applications with full CRUD and RESTful APIs',
     exp3:'Collaborated in teams using Trello and Figma to create a group project'
 }
+export const workExp2 = {
+    company:'KNS International',
+    position:'Events Team Lead',
+    startMonth:'Sept',
+    startYear:'2018',
+    endMonth:'Oct',
+    endYear:'2020',
+    exp1:'Led my team to effectively and efficiently fulfill orders',
+    exp2:'Provided solutions to increase productivity',
+    exp3:'Assisted and advised each team member'
+}
+
+export const skills = {
+    skill1:'React.js',
+    skill2:'Node.js',
+    skill3:'React Redux',
+    skill4:'Express',
+    skill5:'PostgreSQL',
+    skill6:'Massive',
+    skill7:'Bcrypt',
+    skill8:'HTML5',
+    skill9:'CSS3',
+    skill10:'Git',
+    skill11:'Postman',
+    skill12:'Heroku',
+    skill13:'Nginx',
+    skill14:'Digital Ocean',
+    skill15:'Nodemailer',
+    skill16:'Stripe',
+    skill17:'Axios',
+    skill18:'Github'
+}

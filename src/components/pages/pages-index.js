@@ -4,7 +4,8 @@ import MobileMenuPage from "../MobileMenu/mobileMenu-index";
 import MainSection from "../MainSection/main-index";
 import ProfileSection from "../ProfileSection/profile-index";
 import ProExp from "../ProExpSection/proExp-index";
-import { mainInfo, workExp1 } from "../Data";
+import Skills from "../SkillsSection/skills-index"
+import { mainInfo, workExp1, workExp2, skills } from "../Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,8 @@ const Home = () => {
       <MainSection {...mainInfo} />
       <ProfileSection {...mainInfo} />
       <ProExp {...workExp1} />
+      <ProExp {...workExp2} />
+      <Skills {...skills} />
     </>
   );
 };
