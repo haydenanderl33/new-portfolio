@@ -30,6 +30,7 @@ font-size: 16px;
     transition: all 0.4s ease-in-out;
     color: #f9627d;
     font-size: 24px;
+    overflow-wrap: anywhere;
     cursor: none;
   }
 

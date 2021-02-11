@@ -98,12 +98,12 @@ export const ProExpDescriptionDate = styled.div`
 `;
 export const ProExpDescriptionBulletWrapper = styled.ul`
   height: 100px;
-  width: 80%;
+  max-height: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-left: 48px;
   list-style: circle;
 
   @media screen and (max-width: 768px) {

@@ -8,7 +8,7 @@ const [scrollNav, setScrollNav] = useState(false)
 
 const changeNav = () => {
   if(window.scrollY >= 80){
-    setScrollNav(true)
+    setScrollNav(!false)
   } else {
     setScrollNav(false)
   }
@@ -22,7 +22,7 @@ useEffect(() => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavContainer>
-          <NavLogo to='home' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>{initials}</NavLogo>
+          <NavLogo to='home' smooth={true} duration={500} spy={true} exact={'true'} offset={-80} scrollNav={scrollNav}>{initials}</NavLogo>
           <MobileIcon onClick={toggle} >
             <GiCrystalBars />
           </MobileIcon>

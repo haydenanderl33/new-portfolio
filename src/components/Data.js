@@ -51,3 +51,16 @@ export const skills = {
     skill17:'Axios',
     skill18:'Github'
 }
+
+export const projects = {
+    projectLink1:'http://musclememory.me/#/',
+    projectDescription1:'Personal Project',
+    titleFirst1: true,
+    projectLink2:'http://musclememory.me/#/',
+    projectDescription2:'Personal Project',
+    titleFirst2: false,
+    projectLink3:'http://musclememory.me/#/',
+    projectDescription3:'Personal Project',
+    titleFirst3: true,
+}
+

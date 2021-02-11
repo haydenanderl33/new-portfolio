@@ -15,9 +15,9 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     background: #19323C;
-  }
+  } */
 `;
 export const NavContainer = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ export const NavContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkRoute)`
-  color: #f8f7f9;
+  color: ${({ scrollNav }) => (scrollNav ? "transparent" : "#F8F7F9" )};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
