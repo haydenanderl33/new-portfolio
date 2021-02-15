@@ -45,7 +45,7 @@ export const ProfileImg = styled.img`
 `;
 export const ProfileInfo = styled.div`
   display: flex;
-  padding: 16px 24px;
+  padding: 16px 0;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;

@@ -22,7 +22,7 @@ useEffect(() => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavContainer>
-          <NavLogo to='home' smooth={true} duration={500} spy={true} exact={'true'} offset={-80} scrollNav={scrollNav}>{initials}</NavLogo>
+          <NavLogo to='/contact' offset={-80} scrollNav={scrollNav}>{initials}</NavLogo>
           <MobileIcon onClick={toggle} >
             <GiCrystalBars />
           </MobileIcon>
@@ -49,7 +49,7 @@ useEffect(() => {
               </NavItem>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to>Contact Me</NavBtnLink>
+              <NavBtnLink to="/contact">Contact Me</NavBtnLink>
           </NavBtn>
         </NavContainer>
       </Nav>

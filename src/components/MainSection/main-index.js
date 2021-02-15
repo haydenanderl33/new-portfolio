@@ -15,7 +15,7 @@ import Video from "../videos/video-4.mp4";
 
 const Main = ({ name, title, linkedin, github, instagram }) => {
   return (
-    <MainContainer>
+    <MainContainer id="home">
       <MainBackground>
         <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
       </MainBackground>

@@ -2,6 +2,7 @@ export const mainInfo = {
     name: 'Hayden Anderl',
     title:'Full Stack Web Developer',
     initials:'HJA',
+    email: 'hayden,anderl33@gmailcom',
     linkedin:'https://www.linkedin.com/in/hayden-anderl/',
     github:'https://github.com/haydenanderl33',
     instagram:'https://www.instagram.com/hayden_anderl/',
