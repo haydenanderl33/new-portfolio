@@ -14,13 +14,13 @@ import waves from "../../images/waves.jpg"
 const Projects = ({projectLink1, projectDescription1, titleFirst1, projectLink2, projectDescription2, titleFirst2, projectLink3, projectDescription3, titleFirst3}) => {
   return (
     <>
-    <ProjectsContainer>
+    <ProjectsContainer id='projects' >
       <ProjectImageBackground>
         <Image src={hanaleiSunset}/>
       </ProjectImageBackground>
       <ProjectsWrapper>
         <ProjectColumnsContainer titleFirst={titleFirst1}>
-          <ProjectName>{projectLink1}</ProjectName>
+          <ProjectName href={projectLink1}>{projectLink1}</ProjectName>
           <ProjectDescription>{projectDescription1}
           </ProjectDescription>
         </ProjectColumnsContainer>
@@ -32,7 +32,7 @@ const Projects = ({projectLink1, projectDescription1, titleFirst1, projectLink2,
       </ProjectImageBackground>
       <ProjectsWrapper>
         <ProjectColumnsContainer titleFirst={titleFirst2}>
-          <ProjectName>{projectLink2}</ProjectName>
+          <ProjectName href={projectLink2}>{projectLink2}</ProjectName>
           <ProjectDescription>{projectDescription2}
           </ProjectDescription>
         </ProjectColumnsContainer>
@@ -44,7 +44,7 @@ const Projects = ({projectLink1, projectDescription1, titleFirst1, projectLink2,
       </ProjectImageBackground>
       <ProjectsWrapper>
         <ProjectColumnsContainer titleFirst={titleFirst3}>
-          <ProjectName>{projectLink3}</ProjectName>
+          <ProjectName href={projectLink3}>{projectLink3}</ProjectName>
           <ProjectDescription>{projectDescription3}
           </ProjectDescription>
         </ProjectColumnsContainer>

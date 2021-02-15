@@ -16,8 +16,8 @@ export const workExp1 = {
     endMonth:'Jan',
     endYear:'2021',
     exp1:'Demonstrated HTML, CSS, and Javascript skills by building React.js web applications',
-    exp2:'Built React.js applications with full CRUD and RESTful APIs',
-    exp3:'Collaborated in teams using Trello and Figma to create a group project'
+    exp2:'Built Full Stack Web Applications with React.js, Node.js, Express, PostgreSQL',
+    exp3:'Collaborated in teams using tools such as Trello and Figma '
 }
 export const workExp2 = {
     company:'KNS International',
@@ -54,13 +54,13 @@ export const skills = {
 
 export const projects = {
     projectLink1:'http://musclememory.me/#/',
-    projectDescription1:'Personal Project',
+    projectDescription1:'Fitness Tracking Application',
     titleFirst1: true,
-    projectLink2:'http://musclememory.me/#/',
-    projectDescription2:'Personal Project',
+    projectLink2:'http://devbook.network/',
+    projectDescription2:'Digital Yearbook created for Devmountain Alumni',
     titleFirst2: false,
-    projectLink3:'http://musclememory.me/#/',
-    projectDescription3:'Personal Project',
+    projectLink3:'https://haydenanderl33.github.io/portfolio/',
+    projectDescription3:'Original Portfolio Website',
     titleFirst3: true,
 }
 

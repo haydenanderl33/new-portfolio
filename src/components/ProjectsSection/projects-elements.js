@@ -22,25 +22,23 @@ export const Image = styled.img`
   background: #7a82ab;
 `;
 export const ProjectsWrapper = styled.div`
-position: absolute;
-display: grid;
+  position: absolute;
+  display: grid;
   z-index: 1;
-height: 100%;
+  height: 100%;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  
 `;
 export const ProjectColumnsContainer = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas:
-    ${({ titleFirst }) => (titleFirst ? `'col1 col2'` : `'col2 col1'`)};
+  grid-template-areas: ${({ titleFirst }) =>
+    titleFirst ? `'col1 col2'` : `'col2 col1'`};
 
-    
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -54,24 +52,25 @@ export const ProjectName = styled.a`
   padding: 0 48px;
 
   @media screen and (max-width: 768px) {
-padding: 0;
-font-size: 18px;
+    padding: 0;
+    font-size: 18px;
+    overflow-wrap: break-word;
   }
 
   &:hover {
-    color: #F9627D;
-    transition: 0.2 ease-in-out;
+    color: #F8F7F9;
+    transition: 0.5 ease-in-out;
     cursor: pointer;
   }
-  
 `;
 export const ProjectDescription = styled.div`
-  color: #F8F7F9;
+  color: #000000;
   font-weight: bold;
   grid-area: col2;
   padding: 0 48px;
 
   @media screen and (max-width: 768px) {
-padding: 0;
+    padding: 0;
+    color: #F8F7F9;
   }
 `;

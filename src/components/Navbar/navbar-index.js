@@ -43,7 +43,7 @@ useEffect(() => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='Projects'>
+                <NavLinks to='projects' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>
                     Projects
                 </NavLinks>
               </NavItem>
