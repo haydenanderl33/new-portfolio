@@ -78,6 +78,7 @@ export const BtnWrap = styled.div`
 `;
 export const BtnRoute = styled(LinkRoute)`
   color: #F8F7F9;
+  margin-top: 36px;
   background: #7A82AB;
   border-radius: 50px;
   white-space: nowrap;
@@ -90,6 +91,7 @@ export const BtnRoute = styled(LinkRoute)`
 
   @media screen and (max-width: 280px) {
     padding: 16px 24px;
+    margin-top: 0;
   }
 
   &:hover {
