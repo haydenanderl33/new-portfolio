@@ -28,22 +28,22 @@ useEffect(() => {
           </MobileIcon>
           <NavMenu>
               <NavItem>
-                <NavLinks to='about' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>
+                <NavLinks to='about' smooth={true} duration={750} spy={true} exact={'true'} offset={-80}>
                     About
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='resume' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>
+                <NavLinks to='resume' smooth={true} duration={750} spy={true} exact={'true'} offset={-80}>
                     Resume
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='skills' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>
+                <NavLinks to='skills' smooth={true} duration={750} spy={true} exact={'true'} offset={-80}>
                     Skills
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='projects' smooth={true} duration={500} spy={true} exact={'true'} offset={-80}>
+                <NavLinks to='projects' smooth={true} duration={750} spy={true} exact={'true'} offset={-80}>
                     Projects
                 </NavLinks>
               </NavItem>

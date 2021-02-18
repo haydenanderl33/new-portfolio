@@ -57,11 +57,17 @@ export const projects = {
     projectLink1:'http://musclememory.me/#/',
     projectDescription1:'Fitness Tracking Application',
     titleFirst1: true,
+    lightTextName1: false, 
+    lightTextDescription1: false, 
     projectLink2:'http://devbook.network/',
     projectDescription2:'Digital Yearbook created for Devmountain Alumni',
     titleFirst2: false,
+    lightTextName2: false, 
+    lightTextDescription2: false,
     projectLink3:'https://haydenanderl33.github.io/portfolio/',
     projectDescription3:'Original Portfolio Website',
     titleFirst3: true,
+    lightTextName3: false, 
+    lightTextDescription3: false,
 }
 

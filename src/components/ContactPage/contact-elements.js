@@ -18,6 +18,7 @@ export const ContactPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5 all ease-in-out;
 `;
 export const ContactBoxContainer = styled.div`
   height: 440px;

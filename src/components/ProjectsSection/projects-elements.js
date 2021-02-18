@@ -23,54 +23,83 @@ export const Image = styled.img`
 `;
 export const ProjectsWrapper = styled.div`
   position: absolute;
-  display: grid;
-  z-index: 1;
+  z-index: 3;
   height: 100%;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
+  display: flex;
+  flex-direction:   ${({ titleFirst }) => (titleFirst ? `row` : `row-reverse`)};
+  
+  @media screen and (max-width: 768px) {
+      flex-direction: column;
+  }
 `;
-export const ProjectColumnsContainer = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: ${({ titleFirst }) =>
-    titleFirst ? `'col1 col2'` : `'col2 col1'`};
+export const ProjectNameContainer = styled.div`
+  height:100%;
+  width:50%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: ${({ titleFirst }) => (titleFirst ? `flex-end` : `flex-start`)};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      height: 50%;
+      width: 100%;
+      align-items: center;
   }
 `;
 export const ProjectName = styled.a`
-  color: #150578;
+  color: ${({ lightText }) => (lightText ? `#F8F7F9` : `#150578`)};
   font-size: 24px;
   font-weight: bold;
-  grid-area: col1;
-  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
 
   @media screen and (max-width: 768px) {
-    padding: 0;
-    font-size: 18px;
-    overflow-wrap: break-word;
+    color: #92DCE5;
+      height: 200px;
+      width: 300px;
+      font-size: 16px;
+      align-items: center;
+      overflow-wrap: anywhere;
+      padding: 0 24px;
   }
 
   &:hover {
-    color: #F8F7F9;
+    color: ${({ lightText }) => (lightText ?  `#150578` : `#F8F7F9` )};
     transition: 0.5 ease-in-out;
     cursor: pointer;
   }
 `;
-export const ProjectDescription = styled.div`
-  color: #000000;
-  font-weight: bold;
-  grid-area: col2;
-  padding: 0 48px;
+export const ProjectDescriptionContainer = styled.div`
+    height:100%;
+  width:50%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: ${({ titleFirst }) => (titleFirst ? `flex-start` : `flex-end`)};
 
   @media screen and (max-width: 768px) {
-    padding: 0;
+      height: 50%;
+      width: 100%;
+      align-items: center;
+  }
+`;
+export const ProjectDescription = styled.div`
+  color: ${({ lightText }) => (lightText ?  `#92DCE5` : `#000000` )};
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  height: 90px;
+  width: 700px;
+
+  @media screen and (max-width: 768px){
     color: #F8F7F9;
+    font-size: 16px;
+    padding: 0 24px;
+    height: 200px;
+      width: 300px;
   }
 `;

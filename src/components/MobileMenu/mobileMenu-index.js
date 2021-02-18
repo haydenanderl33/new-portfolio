@@ -10,19 +10,19 @@ import {
   MobileMenuRoute,
 } from "./mobileMenu-elements";
 
-const MobileMenuPage = (props) => {
+const MobileMenuPage = ({toggle, isOpen}) => {
   return (
     <>
-      <MobileMenuContainer isOpen={props.isOpen} onClick={props.toggle}>
-        <Icon onClick={props.toggle}>
+      <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>
         <MobileMenuWrapper>
           <MobileMenu>
-            <MobileMenuLink to="about" onClick={props.toggle} >About</MobileMenuLink>
-            <MobileMenuLink to="resume" onClick={props.toggle} >Resume</MobileMenuLink>
-            <MobileMenuLink to="skills" onClick={props.toggle} >Skills</MobileMenuLink>
-            <MobileMenuLink to="projects" onClick={props.toggle} >Projects</MobileMenuLink>
+            <MobileMenuLink to="about" smooth={true} duration={750} spy={true} exact={'true'} onClick={toggle} >About</MobileMenuLink>
+            <MobileMenuLink to="resume" smooth={true} duration={750} spy={true} exact={'true'} onClick={toggle} >Resume</MobileMenuLink>
+            <MobileMenuLink to="skills" smooth={true} duration={750} spy={true} exact={'true'} onClick={toggle} >Skills</MobileMenuLink>
+            <MobileMenuLink to="projects" smooth={true} duration={750} spy={true} exact={'true'} onClick={toggle} >Projects</MobileMenuLink>
           </MobileMenu>
         <MobileMenuBtnWrap>
           <MobileMenuRoute to="/contact">Contact</MobileMenuRoute>
