@@ -66,4 +66,11 @@ export const ProfileH1 = styled.h1`
 export const ProfileAbout = styled.p`
   color: #f8f7f9;
   max-width:480px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 12px;
+  }
 `;

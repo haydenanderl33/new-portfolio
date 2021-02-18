@@ -6,11 +6,11 @@ export const mainInfo = {
     linkedin:'https://www.linkedin.com/in/hayden-anderl/',
     github:'https://github.com/haydenanderl33',
     instagram:'https://www.instagram.com/hayden_anderl/',
-    about:"Welcome to my portfolio site. As a React developer, I've been able to overcome challenges and have gained a passion for coding. Learning to code is fun but it can be also be tough! I think that is why it can feel so rewarding. "
+    about:"My name is Hayden and welcome to my portfolio site! I began my web development journey as a student at DevMountain. As a developer, I've been able to overcome challenges, grow my skill set and gain a passion for coding. I enjoy solving problems and learning new ways to develop applications."
 }
 
 export const workExp1 = {
-    company:'Devmountain',
+    company:'DevMountain',
     position:'Student Web Developer',
     startMonth:'Oct',
     startYear:'2020',

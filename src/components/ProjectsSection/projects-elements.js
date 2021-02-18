@@ -22,6 +22,7 @@ export const Image = styled.img`
   background: #7a82ab;
 `;
 export const ProjectsWrapper = styled.div`
+box-sizing: border-box;
   position: absolute;
   z-index: 3;
   height: 100%;
@@ -65,6 +66,9 @@ export const ProjectName = styled.a`
       overflow-wrap: anywhere;
       padding: 0 24px;
   }
+  @media screen and (max-width: 280px) {
+      padding-left: 24px;
+  }
 
   &:hover {
     color: ${({ lightText }) => (lightText ?  `#150578` : `#F8F7F9` )};
@@ -105,6 +109,10 @@ export const ProjectDescription = styled.div`
     padding: 0 24px;
     height: 200px;
       width: 300px;
+  }
+
+  @media screen and (max-width: 280px) {
+      padding-left: 24px;
   }
 
 
