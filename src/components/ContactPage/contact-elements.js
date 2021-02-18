@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 
 export const ContactPage = styled.div`
+
   min-height: 692px;
   position: fixed;
   bottom: 0;
@@ -28,6 +29,10 @@ export const ContactBoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 280px) {
+    height: 500px;
+    width: 80%;
+  }
 `;
 export const ContactH1Wrapper = styled.div`
   max-width: 320px;
@@ -46,11 +51,20 @@ display: flex;
 flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-`;
+
+
+  `;
 export const ContactLink = styled.a`
   color: #7a82ab;
   padding: 16px 16px;
   margin-bottom: 24px;
+  @media screen and (max-width: 280px) {
+    padding: 16px 16px;
+    height: 100px;
+    width: 180px;
+    overflow-wrap: anywhere;
+
+  }
 
   &:hover {
       transition: all 0.2s ease-in-out;
@@ -64,7 +78,6 @@ export const BtnWrap = styled.div`
 `;
 export const BtnRoute = styled(LinkRoute)`
   color: #F8F7F9;
-  margin-top: 36px;
   background: #7A82AB;
   border-radius: 50px;
   white-space: nowrap;
@@ -74,6 +87,10 @@ export const BtnRoute = styled(LinkRoute)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
+  @media screen and (max-width: 280px) {
+    padding: 16px 24px;
+  }
 
   &:hover {
     transition: all 0.2s ease-in-out;

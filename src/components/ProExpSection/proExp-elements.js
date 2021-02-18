@@ -16,7 +16,7 @@ export const ProExpContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     height: 500px;
-    padding: 0 16px;
+    padding-left: 16px;
     background: #7a82ab;
   }
 `;
@@ -112,4 +112,12 @@ export const ProExpDescriptionBulletWrapper = styled.ul`
   }
 `;
 export const ProExpDescriptionBullet = styled.li`
+
+@media screen and (max-width: 575px) {
+        font-size: 12px;
+  }
+
+@media screen and (max-width: 280px) {
+        font-size: 12px;
+  }
 `;

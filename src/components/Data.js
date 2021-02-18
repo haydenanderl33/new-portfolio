@@ -6,7 +6,7 @@ export const mainInfo = {
     linkedin:'https://www.linkedin.com/in/hayden-anderl/',
     github:'https://github.com/haydenanderl33',
     instagram:'https://www.instagram.com/hayden_anderl/',
-    about:"Hi! I'm Hayden and welcome to my portfolio site. As a React developer, I've been able to overcome challenges and have gained a passion for coding. Learning to code is fun but it can be also be tough! I think that is why it can feel so rewarding. "
+    about:"Welcome to my portfolio site. As a React developer, I've been able to overcome challenges and have gained a passion for coding. Learning to code is fun but it can be also be tough! I think that is why it can feel so rewarding. "
 }
 
 export const workExp1 = {

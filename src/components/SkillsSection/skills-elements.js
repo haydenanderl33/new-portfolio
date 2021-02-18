@@ -20,12 +20,21 @@ export const SkillsWrapperUl = styled.ul`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap:0
   }
+
+
 `;
 
 export const SkillsListItem1 = styled.li`
 color: #F8F7F9;
 font-size: 16px;
+
+@media screen and (max-width: 280px) {
+        font-size: 12px;
+  }
+
+
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;
@@ -50,6 +59,11 @@ animation-name: floating;
 export const SkillsListItem2 = styled.li`
 color: #F8F7F9;
 font-size: 16px;
+
+@media screen and (max-width: 280px) {
+        font-size: 12px;
+  }
+
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;

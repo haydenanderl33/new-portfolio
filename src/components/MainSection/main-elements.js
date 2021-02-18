@@ -51,6 +51,12 @@ export const MainP = styled.p`
     font-size: 24px;
     font-weight: bold;
     max-width: 600px;
+    @media screen and (max-width: 575px) {
+        font-size: 16px;
+  }
+    @media screen and (max-width: 280px) {
+        font-size: 16px;
+  }
 
 `
 export const MainIconWrap  = styled.p`

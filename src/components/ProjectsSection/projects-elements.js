@@ -54,6 +54,7 @@ export const ProjectName = styled.a`
   display: flex;
   align-items: center;
   padding: 0 64px;
+  
 
   @media screen and (max-width: 768px) {
     color: #92DCE5;
@@ -95,6 +96,9 @@ export const ProjectDescription = styled.div`
   height: 90px;
   width: 700px;
 
+  @media screen and (max-width: 1370px){
+    width: 400px;
+  }
   @media screen and (max-width: 768px){
     color: #F8F7F9;
     font-size: 16px;
@@ -102,4 +106,6 @@ export const ProjectDescription = styled.div`
     height: 200px;
       width: 300px;
   }
+
+
 `;
