@@ -1,5 +1,5 @@
 export const mainInfo = {
-    name: 'Hayden Anderl',
+    name: 'Hayden And',
     title:'Full Stack Web Developer',
     initials:'HJA',
     email: 'hayden,anderl33@gmailcom',
