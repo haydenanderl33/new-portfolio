@@ -22,7 +22,7 @@ export const ContactPage = styled.div`
   transition: 0.5 all ease-in-out;
 
   @media screen and (max-width: 768px) {
-    padding-top: 86px;
+    padding-top: 48px;
     flex-direction: column;
     justify-content: flex-start;
 
