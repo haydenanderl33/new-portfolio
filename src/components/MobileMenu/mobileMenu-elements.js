@@ -46,6 +46,9 @@ export const MobileMenu = styled.ul`
   @media screen and (max-width: 768px) {
     grid-template-rows: repeat(6, 80px);
   }
+  @media screen and (max-width: 548px) {
+    grid-template-rows: repeat(5, 80px);
+  }
 `;
 export const MobileMenuLink = styled(LinkScroll)`
   display: flex;
