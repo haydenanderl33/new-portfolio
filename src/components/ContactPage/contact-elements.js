@@ -20,6 +20,13 @@ export const ContactPage = styled.div`
   justify-content: center;
   align-items: center;
   transition: 0.5 all ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 86px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
 `;
 export const ContactBoxContainer = styled.div`
   height: 440px;

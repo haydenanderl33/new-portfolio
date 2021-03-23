@@ -12,6 +12,8 @@ import {
 import hanaleiSunset from "../../images/hanaleiSunset.jpg";
 import kauaiBeach from "../../images/kauaiBeach.jpg";
 import waves from "../../images/waves.jpg";
+import napaliAerial from "../../images/napaliaerial.jpg";
+
 const Projects = ({
   projectLink1,
   projectDescription1,
@@ -28,6 +30,11 @@ const Projects = ({
   titleFirst3,
   lightTextName3,
   lightTextDescription3,
+  projectLink4,
+  projectDescription4,
+  titleFirst4,
+  lightTextName4,
+  lightTextDescription4,
 }) => {
   return (
     <>
@@ -67,6 +74,19 @@ const Projects = ({
           </ProjectNameContainer>
           <ProjectDescriptionContainer titleFirst={titleFirst3}>
             <ProjectDescription lightText={lightTextDescription3}>{projectDescription3}</ProjectDescription>
+          </ProjectDescriptionContainer>
+        </ProjectsWrapper>
+      </ProjectsContainer>
+      <ProjectsContainer id="projects">
+        <ProjectImageBackground>
+          <Image src={napaliAerial} />
+        </ProjectImageBackground>
+        <ProjectsWrapper titleFirst={titleFirst4}>
+          <ProjectNameContainer titleFirst={titleFirst4}>
+            <ProjectName lightText={lightTextName4} href={projectLink4}>{projectLink4}</ProjectName>
+          </ProjectNameContainer>
+          <ProjectDescriptionContainer titleFirst={titleFirst4}>
+            <ProjectDescription lightText={lightTextDescription4}>{projectDescription4}</ProjectDescription>
           </ProjectDescriptionContainer>
         </ProjectsWrapper>
       </ProjectsContainer>

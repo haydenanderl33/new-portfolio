@@ -69,5 +69,10 @@ export const projects = {
     titleFirst3: true,
     lightTextName3: false, 
     lightTextDescription3: false,
+    projectLink4:'https://haydenanderl33.github.io/vanilla-js-todo/',
+    projectDescription4:'Vanilla JS To-do List',
+    titleFirst4: false,
+    lightTextName4: true, 
+    lightTextDescription4: true,
 }
 
