@@ -74,5 +74,10 @@ export const projects = {
     titleFirst4: false,
     lightTextName4: true, 
     lightTextDescription4: true,
+    projectLink5:'https://hayden-anderl-reactjs-to-do.netlify.app/',
+    projectDescription5:'React JS To-do List',
+    titleFirst5: true,
+    lightTextName5: true, 
+    lightTextDescription5: true,
 }
 

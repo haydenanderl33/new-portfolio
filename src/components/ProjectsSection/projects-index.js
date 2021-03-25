@@ -13,6 +13,7 @@ import hanaleiSunset from "../../images/hanaleiSunset.jpg";
 import kauaiBeach from "../../images/kauaiBeach.jpg";
 import waves from "../../images/waves.jpg";
 import napaliAerial from "../../images/napaliaerial.jpg";
+import duskKauai from "../../images/duskKauai.jpg";
 
 const Projects = ({
   projectLink1,
@@ -35,6 +36,11 @@ const Projects = ({
   titleFirst4,
   lightTextName4,
   lightTextDescription4,
+  projectLink5,
+  projectDescription5,
+  titleFirst5,
+  lightTextName5,
+  lightTextDescription5,
 }) => {
   return (
     <>
@@ -87,6 +93,19 @@ const Projects = ({
           </ProjectNameContainer>
           <ProjectDescriptionContainer titleFirst={titleFirst4}>
             <ProjectDescription lightText={lightTextDescription4}>{projectDescription4}</ProjectDescription>
+          </ProjectDescriptionContainer>
+        </ProjectsWrapper>
+      </ProjectsContainer>
+      <ProjectsContainer id="projects">
+        <ProjectImageBackground>
+          <Image src={duskKauai} />
+        </ProjectImageBackground>
+        <ProjectsWrapper titleFirst={titleFirst5}>
+          <ProjectNameContainer titleFirst={titleFirst5}>
+            <ProjectName lightText={lightTextName5} href={projectLink5}>{projectLink5}</ProjectName>
+          </ProjectNameContainer>
+          <ProjectDescriptionContainer titleFirst={titleFirst5}>
+            <ProjectDescription lightText={lightTextDescription5}>{projectDescription5}</ProjectDescription>
           </ProjectDescriptionContainer>
         </ProjectsWrapper>
       </ProjectsContainer>
