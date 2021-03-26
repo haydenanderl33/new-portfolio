@@ -72,14 +72,14 @@ const Projects = ({
       </ProjectsContainer>
       <ProjectsContainer id="projects">
         <ProjectImageBackground>
-          <Image src={waves} />
+          <Image src={duskKauai} />
         </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst3}>
-          <ProjectNameContainer titleFirst={titleFirst3}>
-            <ProjectName lightText={lightTextName3} href={projectLink3}>{projectLink3}</ProjectName>
+        <ProjectsWrapper titleFirst={titleFirst5}>
+          <ProjectNameContainer titleFirst={titleFirst5}>
+            <ProjectName lightText={lightTextName5} href={projectLink5}>{projectLink5}</ProjectName>
           </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst3}>
-            <ProjectDescription lightText={lightTextDescription3}>{projectDescription3}</ProjectDescription>
+          <ProjectDescriptionContainer titleFirst={titleFirst5}>
+            <ProjectDescription lightText={lightTextDescription5}>{projectDescription5}</ProjectDescription>
           </ProjectDescriptionContainer>
         </ProjectsWrapper>
       </ProjectsContainer>
@@ -98,14 +98,14 @@ const Projects = ({
       </ProjectsContainer>
       <ProjectsContainer id="projects">
         <ProjectImageBackground>
-          <Image src={duskKauai} />
+          <Image src={waves} />
         </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst5}>
-          <ProjectNameContainer titleFirst={titleFirst5}>
-            <ProjectName lightText={lightTextName5} href={projectLink5}>{projectLink5}</ProjectName>
+        <ProjectsWrapper titleFirst={titleFirst3}>
+          <ProjectNameContainer titleFirst={titleFirst3}>
+            <ProjectName lightText={lightTextName3} href={projectLink3}>{projectLink3}</ProjectName>
           </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst5}>
-            <ProjectDescription lightText={lightTextDescription5}>{projectDescription5}</ProjectDescription>
+          <ProjectDescriptionContainer titleFirst={titleFirst3}>
+            <ProjectDescription lightText={lightTextDescription3}>{projectDescription3}</ProjectDescription>
           </ProjectDescriptionContainer>
         </ProjectsWrapper>
       </ProjectsContainer>

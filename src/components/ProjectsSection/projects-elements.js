@@ -49,7 +49,7 @@ export const ProjectNameContainer = styled.div`
   }
 `;
 export const ProjectName = styled.a`
-  color: ${({ lightText }) => (lightText ? `#F8F7F9` : `#150578`)};
+  color: ${({ lightText }) => (lightText ? `#ffffff` : `#000000`)};
   font-size: 24px;
   font-weight: bold;
   display: flex;
@@ -72,6 +72,7 @@ export const ProjectName = styled.a`
 
   &:hover {
     color: ${({ lightText }) => (lightText ?  `#150578` : `#F8F7F9` )};
+    color: #F9627D;
     transition: 0.5 ease-in-out;
     cursor: pointer;
   }
@@ -91,7 +92,7 @@ export const ProjectDescriptionContainer = styled.div`
   }
 `;
 export const ProjectDescription = styled.div`
-  color: ${({ lightText }) => (lightText ?  `#92DCE5` : `#000000` )};
+  color: ${({ lightText }) => (lightText ?  `#ffffff` : `#000000` )};
   font-weight: bold;
   font-size: 24px;
   display: flex;
