@@ -20,17 +20,17 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, isLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => isLoading(true), 1500);
-  }, []);
-
-  // const loadingDone = () => {
-  //   isLoading(true);
-  // };
-
   // useEffect(() => {
-  //   window.addEventListener("load", loadingDone);
+  //   setTimeout(() => isLoading(true), 1500);
   // }, []);
+
+  const loadingDone = () => {
+    isLoading(true);
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", loadingDone());
+  }, []);
 
   const toggle = () => {
     setIsOpen(!isOpen);

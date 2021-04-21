@@ -4,6 +4,8 @@ export const ProjectsContainer = styled.div`
   height: 400px;
   position: relative;
 `;
+
+
 export const ProjectImageBackground = styled.div`
   position: absolute;
   top: 0;
@@ -13,6 +15,16 @@ export const ProjectImageBackground = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3)
+  }
 `;
 export const Image = styled.img`
   width: 100%;
@@ -92,7 +104,7 @@ export const ProjectDescriptionContainer = styled.div`
   }
 `;
 export const ProjectDescription = styled.div`
-  color: ${({ lightText }) => (lightText ?  `#ffffff` : `#000000` )};
+  color: ${({ lightText }) => (lightText ?  `#92DCE5` : `#000000` )};
   font-weight: bold;
   font-size: 24px;
   display: flex;
