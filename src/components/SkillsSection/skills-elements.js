@@ -26,9 +26,29 @@ export const SkillsWrapperUl = styled.ul`
 
 `;
 
+export const Logo = styled.div`
+  color: #F8F7F9;
+font-size: 36px;
+display: flex;
+align-items: center;
+margin-bottom: 4px;
+&:hover {
+    transition: all 0.4s ease-in-out;
+    color: #f9627d;
+    cursor: none;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+
+`
+
 export const SkillsListItem1 = styled.li`
 color: #F8F7F9;
 font-size: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 @media screen and (max-width: 280px) {
         font-size: 12px;
@@ -38,7 +58,6 @@ font-size: 16px;
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;
-    font-size: 24px;
     overflow-wrap: anywhere;
     cursor: none;
   }
@@ -51,7 +70,7 @@ animation-name: floating;
 
     @keyframes floating { 
     0% { transform: translate(0,  0px); } 
-    50%  { transform: translate(0, 15px); } 
+    50%  { transform: translate(0, 8px); } 
     100%   { transform: translate(0, 0px); }
 
     }
@@ -59,6 +78,9 @@ animation-name: floating;
 export const SkillsListItem2 = styled.li`
 color: #F8F7F9;
 font-size: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 @media screen and (max-width: 280px) {
         font-size: 12px;
@@ -67,7 +89,6 @@ font-size: 16px;
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;
-    font-size: 24px;
     cursor: none;
   }
 
@@ -79,7 +100,7 @@ animation-name: floatingg;
 
     @keyframes floatingg { 
     0% { transform: translate(0,  0px); } 
-    50%  { transform: translate(0, -15px); } 
+    50%  { transform: translate(0, -8px); } 
     100%   { transform: translate(0, 0px); }
 
   }
