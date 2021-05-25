@@ -26,7 +26,7 @@ export const SkillsWrapperUl = styled.ul`
 
 `;
 
-export const Logo = styled.div`
+export const LogoAndText = styled.div`
   color: #F8F7F9;
 font-size: 16px;
 display: flex;

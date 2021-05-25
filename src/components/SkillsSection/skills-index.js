@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import { SkillsContainer, SkillsWrapperUl, SkillsListItem1, SkillsListItem2, Logo} from './skills-elements'
+import { SkillsContainer, SkillsWrapperUl, SkillsListItem1, SkillsListItem2, LogoAndText} from './skills-elements'
 import { DiReact } from 'react-icons/di'
 import {SiNodeDotJs, SiRedux, SiPostgresql, SiHtml5, SiCss3, SiJavascript, SiPostman, SiHeroku, SiNginx, SiDigitalocean, SiStripe, SiStyledComponents, SiGithub } from 'react-icons/si'
 
@@ -9,16 +9,16 @@ import {SiNodeDotJs, SiRedux, SiPostgresql, SiHtml5, SiCss3, SiJavascript, SiPos
 
 const Skills = ( {skill1, skill2, skill3, skill4,skill5,skill6, skill7,skill8, skill9, skill10, skill11, skill12, skill13, skill14, skill15, skill16, skill17, skill18} ) => {
 
-    const [logoFontSize, setLogoFontSize] = useState('0')
+    const [LogoAndTextFontSize, setLogoAndTextFontSize] = useState('0')
 
     useEffect(() => {
-        const setLogoSize = () => {
-            window.outerWidth <= 768 ? setLogoFontSize('20') : setLogoFontSize('36')
+        const setLogoAndTextSize = () => {
+            window.outerWidth >= 768 ? setLogoAndTextFontSize('36') : setLogoAndTextFontSize('20')
         }
 
-        setLogoSize()
+        setLogoAndTextSize()
         
-    },[logoFontSize])
+    },[LogoAndTextFontSize])
 
 
     // console.log('outer',window.outerWidth)
@@ -30,24 +30,24 @@ const Skills = ( {skill1, skill2, skill3, skill4,skill5,skill6, skill7,skill8, s
     return (
         <SkillsContainer id='skills'>
             <SkillsWrapperUl>
-                <SkillsListItem1><Logo><DiReact style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/>{skill1}</Logo></SkillsListItem1>
-                <SkillsListItem2><Logo><SiNodeDotJs style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/>{skill2}</Logo></SkillsListItem2>
-                <SkillsListItem1><Logo><SiRedux style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill3}</SkillsListItem1>
+                <SkillsListItem1><LogoAndText><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill1}</LogoAndText></SkillsListItem1>
+                <SkillsListItem2><LogoAndText><SiNodeDotJs style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill2}</LogoAndText></SkillsListItem2>
+                <SkillsListItem1><LogoAndText><SiRedux style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill3}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2>{skill4}</SkillsListItem2>
-                <SkillsListItem1><Logo><SiPostgresql style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill5}</SkillsListItem1>
+                <SkillsListItem1><LogoAndText><SiPostgresql style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill5}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2>{skill6}</SkillsListItem2>
                 <SkillsListItem1>{skill7}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiHtml5 style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill8}</SkillsListItem2>
-                <SkillsListItem1><Logo><SiCss3 style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill9}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiJavascript style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill10}</SkillsListItem2>
-                <SkillsListItem1><Logo><SiPostman style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill11}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiHeroku style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill12}</SkillsListItem2>
-                <SkillsListItem1><Logo><SiNginx style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill13}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiDigitalocean style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill14}</SkillsListItem2>
+                <SkillsListItem2><LogoAndText><SiHtml5 style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill8}</LogoAndText></SkillsListItem2>
+                <SkillsListItem1><LogoAndText><SiCss3 style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill9}</LogoAndText></SkillsListItem1>
+                <SkillsListItem2><LogoAndText><SiJavascript style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill10}</LogoAndText></SkillsListItem2>
+                <SkillsListItem1><LogoAndText><SiPostman style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill11}</LogoAndText></SkillsListItem1>
+                <SkillsListItem2><LogoAndText><SiHeroku style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill12}</LogoAndText></SkillsListItem2>
+                <SkillsListItem1><LogoAndText><SiNginx style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill13}</LogoAndText></SkillsListItem1>
+                <SkillsListItem2><LogoAndText><SiDigitalocean style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill14}</LogoAndText></SkillsListItem2>
                 <SkillsListItem1>{skill15}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiStripe style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill16}</SkillsListItem2>
-                <SkillsListItem1><Logo><SiStyledComponents style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill17}</SkillsListItem1>
-                <SkillsListItem2><Logo><SiGithub style={{fontSize: `${logoFontSize}px`, marginBottom: '4px'}}/></Logo>{skill18}</SkillsListItem2>
+                <SkillsListItem2><LogoAndText><SiStripe style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill16}</LogoAndText></SkillsListItem2>
+                <SkillsListItem1><LogoAndText><SiStyledComponents style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill17}</LogoAndText></SkillsListItem1>
+                <SkillsListItem2><LogoAndText><SiGithub style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill18}</LogoAndText></SkillsListItem2>
             </SkillsWrapperUl>
         </SkillsContainer>
     )
