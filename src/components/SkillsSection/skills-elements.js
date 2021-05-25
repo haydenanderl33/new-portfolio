@@ -28,17 +28,17 @@ export const SkillsWrapperUl = styled.ul`
 
 export const Logo = styled.div`
   color: #F8F7F9;
-font-size: 36px;
+font-size: 16px;
 display: flex;
+flex-direction: column;
 align-items: center;
-margin-bottom: 4px;
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;
     cursor: none;
   }
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 12px;
   }
 
 `
