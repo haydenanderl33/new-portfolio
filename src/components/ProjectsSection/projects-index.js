@@ -4,16 +4,39 @@ import {
   ProjectImageBackground,
   Image,
   ProjectsWrapper,
-  ProjectName,
-  ProjectNameContainer,
+  BuiltWith,
+  BuiltWithContainer,
   ProjectDescriptionContainer,
+  ProjectDescriptionWrapper,
   ProjectDescription,
+  IconsWrapper,
+  ProjectPreviewAndLinkContainer,
+  ProjectImage,
+  ProjectImageWrapper,
+  ProjectLinkContainer,
+  ProjectLink,
 } from "./projects-elements";
 import hanaleiSunset from "../../images/hanaleiSunset.jpg";
 import kauaiBeach from "../../images/kauaiBeach.jpg";
 import waves from "../../images/waves.jpg";
 import napaliAerial from "../../images/napaliaerial.jpg";
 import duskKauai from "../../images/duskKauai.jpg";
+import muscleMemoryPreview from "../../images/muscleMemoryPreview.jpg";
+import instagramPreview from '../../images/instagramPreview.jpg'
+import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.jpg'
+
+import {
+  SiReact,
+  SiRedux,
+  SiPostgresql,
+  SiNodeDotJs,
+  SiStripe,
+  SiFirebase,
+  SiTailwindcss,
+  SiHtml5,
+  SiCss3,
+  SiJavascript
+} from "react-icons/si";
 
 const Projects = ({
   projectLink1,
@@ -48,65 +71,80 @@ const Projects = ({
         <ProjectImageBackground>
           <Image src={hanaleiSunset} />
         </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst1}>
-          <ProjectNameContainer titleFirst={titleFirst1}>
-            <ProjectName lightText={lightTextName1} href={projectLink1}>{projectLink1}</ProjectName>
-          </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst1}>
-            <ProjectDescription lightText={lightTextDescription1}>{projectDescription1}</ProjectDescription>
+        <ProjectsWrapper>
+          <ProjectDescriptionContainer>
+              <ProjectDescription>{projectDescription1}</ProjectDescription>
+            <BuiltWithContainer>
+              <BuiltWith>Built with:</BuiltWith>
+            </BuiltWithContainer>
+            <IconsWrapper>
+              <SiReact />
+              <SiRedux />
+              <SiNodeDotJs />
+              <SiPostgresql />
+              <SiStripe />
+            </IconsWrapper>
           </ProjectDescriptionContainer>
+          <ProjectPreviewAndLinkContainer>
+            <ProjectImageWrapper href={projectLink1}>
+              <ProjectImage src={muscleMemoryPreview} />
+            </ProjectImageWrapper>
+            <ProjectLinkContainer>
+              <ProjectLink href={projectLink1}>{projectLink1}</ProjectLink>
+            </ProjectLinkContainer>
+          </ProjectPreviewAndLinkContainer>
         </ProjectsWrapper>
       </ProjectsContainer>
-      <ProjectsContainer id="projects">
+      <ProjectsContainer>
         <ProjectImageBackground>
           <Image src={kauaiBeach} />
         </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst2}>
-          <ProjectNameContainer titleFirst={titleFirst2}>
-            <ProjectName lightText={lightTextName2}  href={projectLink2}>{projectLink2}</ProjectName>
-          </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst2}>
-            <ProjectDescription lightText={lightTextDescription2}>{projectDescription2}</ProjectDescription>
+        <ProjectsWrapper>
+          <ProjectDescriptionContainer>
+              <ProjectDescription>{projectDescription2}</ProjectDescription>
+            <BuiltWithContainer>
+              <BuiltWith>Built with:</BuiltWith>
+            </BuiltWithContainer>
+            <IconsWrapper>
+              <SiReact />
+              <SiTailwindcss />
+              <SiFirebase/>
+            </IconsWrapper>
           </ProjectDescriptionContainer>
+          <ProjectPreviewAndLinkContainer>
+            <ProjectImageWrapper href={projectLink2}>
+              <ProjectImage src={instagramPreview} />
+            </ProjectImageWrapper>
+            <ProjectLinkContainer>
+              <ProjectLink href={projectLink2}>{projectLink2}</ProjectLink>
+            </ProjectLinkContainer>
+          </ProjectPreviewAndLinkContainer>
         </ProjectsWrapper>
       </ProjectsContainer>
-      <ProjectsContainer id="projects">
+      <ProjectsContainer>
         <ProjectImageBackground>
           <Image src={duskKauai} />
         </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst5}>
-          <ProjectNameContainer titleFirst={titleFirst5}>
-            <ProjectName lightText={lightTextName5} href={projectLink5}>{projectLink5}</ProjectName>
-          </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst5}>
-            <ProjectDescription lightText={lightTextDescription5}>{projectDescription5}</ProjectDescription>
+        <ProjectsWrapper>
+          <ProjectDescriptionContainer>
+              <ProjectDescription>{projectDescription4}</ProjectDescription>
+            <BuiltWithContainer>
+              <BuiltWith>Built with:</BuiltWith>
+            </BuiltWithContainer>
+            <IconsWrapper>
+              <SiHtml5 />
+              <SiCss3 />
+              <SiJavascript/>
+            </IconsWrapper>
           </ProjectDescriptionContainer>
-        </ProjectsWrapper>
-      </ProjectsContainer>
-      <ProjectsContainer id="projects">
-        <ProjectImageBackground>
-          <Image src={napaliAerial} />
-        </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst4}>
-          <ProjectNameContainer titleFirst={titleFirst4}>
-            <ProjectName lightText={lightTextName4} href={projectLink4}>{projectLink4}</ProjectName>
-          </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst4}>
-            <ProjectDescription lightText={lightTextDescription4}>{projectDescription4}</ProjectDescription>
-          </ProjectDescriptionContainer>
-        </ProjectsWrapper>
-      </ProjectsContainer>
-      <ProjectsContainer id="projects">
-        <ProjectImageBackground>
-          <Image src={waves} />
-        </ProjectImageBackground>
-        <ProjectsWrapper titleFirst={titleFirst3}>
-          <ProjectNameContainer titleFirst={titleFirst3}>
-            <ProjectName lightText={lightTextName3} href={projectLink3}>{projectLink3}</ProjectName>
-          </ProjectNameContainer>
-          <ProjectDescriptionContainer titleFirst={titleFirst3}>
-            <ProjectDescription lightText={lightTextDescription3}>{projectDescription3}</ProjectDescription>
-          </ProjectDescriptionContainer>
+          <ProjectPreviewAndLinkContainer>
+            <ProjectImageWrapper href={projectLink4}>
+              <ProjectImage src={vanillaJsTodoPreview} />
+            </ProjectImageWrapper>
+            <ProjectLinkContainer>
+              <ProjectLink href={projectLink4}>{projectLink4}</ProjectLink>
+            </ProjectLinkContainer>
+          </ProjectPreviewAndLinkContainer>
         </ProjectsWrapper>
       </ProjectsContainer>
     </>
@@ -114,3 +152,12 @@ const Projects = ({
 };
 
 export default Projects;
+
+// <ProjectsWrapper titleFirst={titleFirst1}>
+//           <ProjectNameContainer titleFirst={titleFirst1}>
+//             <ProjectName lightText={lightTextName1} href={projectLink1}>{projectLink1}</ProjectName>
+//           </ProjectNameContainer>
+//           <ProjectDescriptionContainer titleFirst={titleFirst1}>
+//             <ProjectDescription lightText={lightTextDescription1}>{projectDescription1}</ProjectDescription>
+//           </ProjectDescriptionContainer>
+//         </ProjectsWrapper>

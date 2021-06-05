@@ -10,15 +10,15 @@ export const mainInfo = {
 }
 
 export const workExp1 = {
-    company:'DevMountain',
+    company:'Devmountain',
     position:'Student Web Developer',
     startMonth:'Oct',
     startYear:'2020',
     endMonth:'Jan',
     endYear:'2021',
-    exp1:'Demonstrated HTML, CSS, and Javascript skills by building React.js web applications',
-    exp2:'Built Full Stack Web Applications with React.js, Node.js, Express, PostgreSQL',
-    exp3:'Collaborated in teams using tools such as Trello and Figma '
+    exp1:'Developed Websites using HTML, CSS and JavaScript',
+    exp2:'Built Full Stack Applications with React.js, Node.js, Express and PostgreSQL',
+    exp3:'Developed custom full-stack fitness tracking app'
 }
 export const workExp2 = {
     company:'KNS International',
@@ -27,7 +27,7 @@ export const workExp2 = {
     startYear:'2018',
     endMonth:'Oct',
     endYear:'2020',
-    exp1:'Led my team to effectively and efficiently fulfill orders',
+    exp1:'Led and managed the full-time events team of 5',
     exp2:'Provided solutions to increase productivity',
     exp3:'Assisted and advised each team member'
 }
@@ -55,12 +55,12 @@ export const skills = {
 
 export const projects = {
     projectLink1:'http://musclememory.me/#/',
-    projectDescription1:'Fitness Tracking Application',
+    projectDescription1:'Full Stack Fitness Tracking Application',
     titleFirst1: true,
     lightTextName1: true, 
     lightTextDescription1: true, 
-    projectLink2:'http://devbook.network/',
-    projectDescription2:'Digital Yearbook created for Devmountain Alumni',
+    projectLink2:'https://instagram-96974.firebaseapp.com/',
+    projectDescription2:'Instagram Clone',
     titleFirst2: false,
     lightTextName2: true, 
     lightTextDescription2: true,

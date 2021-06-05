@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
+
 export const ProjectsContainer = styled.div`
   height: 400px;
   position: relative;
 `;
-
 
 export const ProjectImageBackground = styled.div`
   position: absolute;
@@ -23,7 +23,7 @@ export const ProjectImageBackground = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.3)
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `;
 export const Image = styled.img`
@@ -34,99 +34,102 @@ export const Image = styled.img`
   background: #7a82ab;
 `;
 export const ProjectsWrapper = styled.div`
-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   z-index: 3;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction:   ${({ titleFirst }) => (titleFirst ? `row` : `row-reverse`)};
-  
-  @media screen and (max-width: 768px) {
-      flex-direction: column;
-  }
-`;
-export const ProjectNameContainer = styled.div`
-  height:100%;
-  width:50%;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: ${({ titleFirst }) => (titleFirst ? `flex-end` : `flex-start`)};
+  justify-content: flex-start;
+  flex-direction: row;
+  color: #92dce5;
 
-  @media screen and (max-width: 768px) {
-      height: 50%;
-      width: 100%;
-      align-items: center;
-  }
 `;
-export const ProjectName = styled.a`
-  color: ${({ lightText }) => (lightText ? `#ffffff` : `#000000`)};
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  padding: 0 64px;
-  
 
-  @media screen and (max-width: 768px) {
-    color: #92DCE5;
-      height: 200px;
-      width: 300px;
-      font-size: 16px;
-      align-items: center;
-      overflow-wrap: anywhere;
-      padding: 0 24px;
-  }
-  @media screen and (max-width: 280px) {
-      padding-left: 24px;
-  }
-
-  &:hover {
-    color: ${({ lightText }) => (lightText ?  `#150578` : `#F8F7F9` )};
-    color: #F9627D;
-    transition: 0.5 ease-in-out;
-    cursor: pointer;
-  }
-`;
 export const ProjectDescriptionContainer = styled.div`
-    height:100%;
-  width:50%;
-  display: flex;
-  flex-direction:column;
+  height: 100%;
+  width: 50%;
+  display: grid;
+  align-items: center;
   justify-content: center;
-  align-items: ${({ titleFirst }) => (titleFirst ? `flex-start` : `flex-end`)};
+  grid-template-rows: repeat(3, 1fr);
 
-  @media screen and (max-width: 768px) {
-      height: 50%;
-      width: 100%;
-      align-items: center;
-  }
+  /* @media screen and (max-width: 768px) {
+    display: none;
+  } */
 `;
-export const ProjectDescription = styled.div`
-  color: ${({ lightText }) => (lightText ?  `#92DCE5` : `#000000` )};
-  font-weight: bold;
-  font-size: 24px;
+
+export const ProjectDescription = styled.p`
+font-size: 16px;
+overflow-wrap: anywhere;
+`;
+
+export const BuiltWithContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 0 64px;
-  height: 90px;
-  width: 700px;
+  justify-content: center;
+`
+export const BuiltWith = styled.p`
+  font-size: 16px;
+`
 
-  @media screen and (max-width: 1370px){
-    width: 400px;
+export const IconsWrapper = styled.div`
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
   }
-  @media screen and (max-width: 768px){
-    color: #F8F7F9;
-    font-size: 16px;
-    padding: 0 24px;
-    height: 200px;
-      width: 300px;
-  }
-
-  @media screen and (max-width: 280px) {
-      padding-left: 24px;
-  }
-
-
 `;
+export const ProjectPreviewAndLinkContainer = styled.div`
+  height: 100%;
+  width: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+`
+export const ProjectImageWrapper = styled.a`
+
+width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  /* @media screen and (max-width: 768px) {
+    width: 100%;
+  height: 100%;
+  } */
+`
+export const ProjectImage = styled.img`
+object-fit: contain;
+width: 50%;
+height: 50%;
+/* padding-top: 24px; */
+border-radius: 5px;
+`
+export const ProjectLinkContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 24px; */
+  /* padding: 0 16px; */
+`
+export const ProjectLink = styled.a`
+font-size: 16px;
+-ms-word-break: break-all;
+     word-break: break-all;
+color: inherit;
+
+&:hover {
+      transition: all 0.2s ease-in-out;
+      color: #F9627D;
+      cursor: pointer;
+    }
+`

@@ -32,8 +32,9 @@ export const ImageWrapper = styled.div`
   }
 `;
 export const ProfileImg = styled.img`
-  height: 250px;
-  width: 250px;
+     height: 250px;
+  max-width: 250px;
+    object-fit: cover;
   padding: 16px 24px;
   border-radius: 50%;
 
