@@ -55,29 +55,17 @@ export const skills = {
 
 export const projects = {
     projectLink1:'http://musclememory.me/#/',
-    projectDescription1:'Full Stack Fitness Tracking Application',
-    titleFirst1: true,
-    lightTextName1: true, 
-    lightTextDescription1: true, 
+    projectDescription1:'Fitness Tracking Application',
+
     projectLink2:'https://instagram-96974.firebaseapp.com/',
     projectDescription2:'Instagram Clone',
-    titleFirst2: false,
-    lightTextName2: true, 
-    lightTextDescription2: true,
-    projectLink3:'https://haydenanderl33.github.io/portfolio/',
-    projectDescription3:'Original Portfolio Website',
-    titleFirst3: true,
-    lightTextName3: true, 
-    lightTextDescription3: true,
+
+    projectLink3:'https://hayden-anderl-reactjs-to-do.netlify.app/',
+    projectDescription3:'React JS To-do List',
+    
     projectLink4:'https://haydenanderl33.github.io/vanilla-js-todo/',
     projectDescription4:'Vanilla JS To-do List',
-    titleFirst4: false,
-    lightTextName4: true, 
-    lightTextDescription4: true,
-    projectLink5:'https://hayden-anderl-reactjs-to-do.netlify.app/',
-    projectDescription5:'React JS To-do List',
-    titleFirst5: true,
-    lightTextName5: true, 
-    lightTextDescription5: true,
+
+
 }
 

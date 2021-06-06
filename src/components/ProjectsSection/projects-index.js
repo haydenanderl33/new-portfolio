@@ -7,7 +7,6 @@ import {
   BuiltWith,
   BuiltWithContainer,
   ProjectDescriptionContainer,
-  ProjectDescriptionWrapper,
   ProjectDescription,
   IconsWrapper,
   ProjectPreviewAndLinkContainer,
@@ -19,11 +18,12 @@ import {
 import hanaleiSunset from "../../images/hanaleiSunset.jpg";
 import kauaiBeach from "../../images/kauaiBeach.jpg";
 import waves from "../../images/waves.jpg";
-import napaliAerial from "../../images/napaliaerial.jpg";
+// import napaliAerial from "../../images/napaliaerial.jpg";
 import duskKauai from "../../images/duskKauai.jpg";
 import muscleMemoryPreview from "../../images/muscleMemoryPreview.jpg";
 import instagramPreview from '../../images/instagramPreview.jpg'
 import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.jpg'
+import reactJsToDoPreview from '../../images/reactJsToDoPreview.jpg'
 
 import {
   SiReact,
@@ -39,31 +39,15 @@ import {
 } from "react-icons/si";
 
 const Projects = ({
-  projectLink1,
-  projectDescription1,
-  titleFirst1,
-  lightTextName1,
-  lightTextDescription1,
-  projectLink2,
-  projectDescription2,
-  titleFirst2,
-  lightTextName2,
-  lightTextDescription2,
-  projectLink3,
-  projectDescription3,
-  titleFirst3,
-  lightTextName3,
-  lightTextDescription3,
-  projectLink4,
-  projectDescription4,
-  titleFirst4,
-  lightTextName4,
-  lightTextDescription4,
-  projectLink5,
-  projectDescription5,
-  titleFirst5,
-  lightTextName5,
-  lightTextDescription5,
+projectDescription1,
+projectLink1,
+projectDescription2,
+projectLink2,
+projectDescription3,
+projectLink3,
+projectDescription4,
+projectLink4
+
 }) => {
   return (
     <>
@@ -123,6 +107,32 @@ const Projects = ({
       </ProjectsContainer>
       <ProjectsContainer>
         <ProjectImageBackground>
+          <Image src={waves} />
+        </ProjectImageBackground>
+        <ProjectsWrapper>
+          <ProjectDescriptionContainer>
+              <ProjectDescription>{projectDescription3}</ProjectDescription>
+            <BuiltWithContainer>
+              <BuiltWith>Built with:</BuiltWith>
+            </BuiltWithContainer>
+            <IconsWrapper>
+              <SiReact/>
+              <SiCss3 />
+              <SiJavascript/>
+            </IconsWrapper>
+          </ProjectDescriptionContainer>
+          <ProjectPreviewAndLinkContainer>
+            <ProjectImageWrapper href={projectLink3}>
+              <ProjectImage src={reactJsToDoPreview} />
+            </ProjectImageWrapper>
+            <ProjectLinkContainer>
+              <ProjectLink href={projectLink3}>{projectLink3}</ProjectLink>
+            </ProjectLinkContainer>
+          </ProjectPreviewAndLinkContainer>
+        </ProjectsWrapper>
+      </ProjectsContainer>
+      <ProjectsContainer>
+        <ProjectImageBackground>
           <Image src={duskKauai} />
         </ProjectImageBackground>
         <ProjectsWrapper>
@@ -132,7 +142,7 @@ const Projects = ({
               <BuiltWith>Built with:</BuiltWith>
             </BuiltWithContainer>
             <IconsWrapper>
-              <SiHtml5 />
+              <SiHtml5/>
               <SiCss3 />
               <SiJavascript/>
             </IconsWrapper>
