@@ -33,10 +33,10 @@ const Skills = ( {skill1, skill2, skill3, skill4,skill5,skill6, skill7,skill8, s
                 <SkillsListItem1><LogoAndText><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill1}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiNodeDotJs style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill2}</LogoAndText></SkillsListItem2>
                 <SkillsListItem1><LogoAndText><SiRedux style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill3}</LogoAndText></SkillsListItem1>
-                <SkillsListItem2>{skill4}</SkillsListItem2>
+                <SkillsListItem2><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px', display: 'none'}}/>{skill4}</SkillsListItem2>
                 <SkillsListItem1><LogoAndText><SiPostgresql style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill5}</LogoAndText></SkillsListItem1>
-                <SkillsListItem2>{skill6}</SkillsListItem2>
-                <SkillsListItem1>{skill7}</SkillsListItem1>
+                <SkillsListItem2><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px', display: 'none'}}/>{skill6}</SkillsListItem2>
+                <SkillsListItem1><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px', display: 'none'}}/>{skill7}</SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiHtml5 style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill8}</LogoAndText></SkillsListItem2>
                 <SkillsListItem1><LogoAndText><SiCss3 style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill9}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiJavascript style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill10}</LogoAndText></SkillsListItem2>
@@ -44,7 +44,7 @@ const Skills = ( {skill1, skill2, skill3, skill4,skill5,skill6, skill7,skill8, s
                 <SkillsListItem2><LogoAndText><SiHeroku style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill12}</LogoAndText></SkillsListItem2>
                 <SkillsListItem1><LogoAndText><SiNginx style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill13}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiDigitalocean style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill14}</LogoAndText></SkillsListItem2>
-                <SkillsListItem1>{skill15}</SkillsListItem1>
+                <SkillsListItem1><DiReact style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px', display: 'none'}}/>{skill15}</SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiStripe style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill16}</LogoAndText></SkillsListItem2>
                 <SkillsListItem1><LogoAndText><SiStyledComponents style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill17}</LogoAndText></SkillsListItem1>
                 <SkillsListItem2><LogoAndText><SiGithub style={{fontSize: `${LogoAndTextFontSize}px`, marginBottom: '4px'}}/>{skill18}</LogoAndText></SkillsListItem2>

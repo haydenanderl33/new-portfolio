@@ -18,7 +18,7 @@ const Footer = ({ name, linkedin, github, instagram }) => {
       <FooterItemsWrapper>
         <Name to='home' smooth={true} duration={1000} spy={true} exact={'true'} >{name}</Name>
         <YearRightsWrapper>
-          <Rights>©</Rights>
+          {/* <Rights>©</Rights> */}
           <Year>{new Date().getFullYear()}</Year>
         </YearRightsWrapper>
         <SocialLinksWrapper>

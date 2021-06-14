@@ -31,7 +31,7 @@ export const YearRightsWrapper = styled.div`
   width: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #f8f7f9;
   font-size: 24px;
