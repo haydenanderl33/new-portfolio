@@ -1,12 +1,12 @@
 export const mainInfo = {
     name: 'Hayden Anderl',
-    title:'Full Stack Web Developer',
+    title:'Writer. Web Developer.',
     initials:'HJA',
     email: 'hayden,anderl33@gmailcom',
     linkedin:'https://www.linkedin.com/in/hayden-anderl/',
     github:'https://github.com/haydenanderl33',
     instagram:'https://www.instagram.com/hayden_anderl/',
-    about:"My name is Hayden and welcome to my portfolio site! I began my web development journey as a student at DevMountain. As a developer, I've been able to overcome challenges, grow my skill set and gain a passion for coding. I enjoy solving problems and learning new ways to develop applications."
+    about:"Welcome to my portfolio site! I began my web development journey as a student at DevMountain. As a developer, I've been able to overcome challenges, grow my skill set and gain a passion for coding. I enjoy solving problems and learning new ways to develop applications."
 }
 
 export const workExp1 = {
