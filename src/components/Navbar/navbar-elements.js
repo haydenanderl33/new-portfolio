@@ -4,7 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #19323c;
-  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#19323C" )};
+  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#19323C")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -21,29 +21,27 @@ export const Nav = styled.nav`
 `;
 export const NavContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
 `;
-export const NavLogo = styled(LinkRoute)`
-  color: ${({ scrollNav }) => (scrollNav ? "transparent" : "#F8F7F9" )};
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
+// export const NavLogo = styled(LinkRoute)`
+//   color: ${({ scrollNav }) => (scrollNav ? "transparent" : "#F8F7F9" )};
+//   justify-self: flex-start;
+//   cursor: pointer;
+//   font-size: 24px;
+//   display: flex;
+//   align-items: center;
+//   margin-left: 24px;
+//   font-weight: bold;
+//   text-decoration: none;
 
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    color: #92dce5;
-  }
-`;
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     color: #92dce5;
+//   }
+// `;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -65,10 +63,12 @@ export const MobileIcon = styled.div`
 `;
 export const NavMenu = styled.ul`
   display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 22px;
+  height: 80px;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkScroll)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 24px;
   height: 100%;
   cursor: pointer;
 
@@ -96,7 +96,10 @@ export const NavLinks = styled(LinkScroll)`
 `;
 export const NavBtn = styled.nav`
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 80px;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -114,6 +117,36 @@ export const NavBtnLink = styled(LinkRoute)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #f9627d;
+    color: #19323c;
+  }
+`;
+export const NavLogo = styled.nav`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+export const NavLogoLink = styled(LinkScroll)`
+  border-radius: 50px;
+  color: #f8f7f9;
+  white-space: nowrap;
+  padding: 10px 22px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
 
   &:hover {
     transition: all 0.2s ease-in-out;

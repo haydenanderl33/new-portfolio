@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { GiCrystalBars } from 'react-icons/gi'
-import { Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './navbar-elements'
+import { Nav, NavContainer, NavLogo, NavLogoLink, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './navbar-elements'
 
 const Navbar = ({toggle, initials}) => {
 
@@ -26,6 +26,9 @@ useEffect(() => {
           <MobileIcon onClick={toggle} >
             <GiCrystalBars />
           </MobileIcon>
+          <NavLogo>
+              <NavLogoLink to='home' smooth={true} duration={1000} spy={true} exact={'true'} >{initials}</NavLogoLink>
+          </NavLogo>
           <NavMenu>
               <NavItem>
                 <NavLinks to='about' smooth={true} duration={750} spy={true} exact={'true'} offset={-80}>
@@ -49,8 +52,9 @@ useEffect(() => {
               </NavItem>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="/contact">Contact Me</NavBtnLink>
+              <NavBtnLink to="/contact">Contact</NavBtnLink>
           </NavBtn>
+
         </NavContainer>
       </Nav>
     </>
