@@ -22,7 +22,7 @@ useEffect(() => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavContainer>
-          <NavLogo to='/contact' offset={-80} scrollNav={scrollNav}>{initials}</NavLogo>
+          {/* <NavLogo to='/contact' offset={-80} scrollNav={scrollNav}>{initials}</NavLogo> */}
           <MobileIcon onClick={toggle} >
             <GiCrystalBars />
           </MobileIcon>
