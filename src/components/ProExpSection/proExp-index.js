@@ -12,9 +12,19 @@ import {
   ProExpDescriptionBullet,
 } from "./proExp-elements";
 
-const ProExp = ({company, position, startMonth, startYear, endMonth, endYear, exp1, exp2, exp3}) => {
+const ProExp = ({
+  company,
+  position,
+  startMonth,
+  startYear,
+  endMonth,
+  endYear,
+  exp1,
+  exp2,
+  exp3,
+}) => {
   return (
-    <ProExpContainer id='resume'>
+    <ProExpContainer id="resume">
       <ProExpInfoContainer>
         <ProExpInfoWrapper>
           <ProExpNameH3>{company}</ProExpNameH3>
@@ -22,10 +32,10 @@ const ProExp = ({company, position, startMonth, startYear, endMonth, endYear, ex
       </ProExpInfoContainer>
       <ProExpDescriptionContainer>
         <ProExpDescriptionWrapper>
-          <ProExpDescriptionPositionH3>
-            {position}
-          </ProExpDescriptionPositionH3>
-          <ProExpDescriptionDate>{startMonth} {startYear} - {endMonth} {endYear} </ProExpDescriptionDate>
+          <ProExpDescriptionPositionH3>{position}</ProExpDescriptionPositionH3>
+          <ProExpDescriptionDate>
+            {startMonth} {startYear} - {endMonth} {endYear}{" "}
+          </ProExpDescriptionDate>
           <ProExpDescriptionBulletWrapper>
             <ProExpDescriptionBullet>{exp1}</ProExpDescriptionBullet>
             <ProExpDescriptionBullet> {exp2} </ProExpDescriptionBullet>

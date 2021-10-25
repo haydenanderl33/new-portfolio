@@ -10,6 +10,17 @@ export const mainInfo = {
 }
 
 export const workExp1 = {
+    company:'Surf 9 LLC',
+    position:'Sales Representative',
+    startMonth:'Jul',
+    startYear:'2021',
+    endMonth:'Present',
+    endYear:'',
+    exp1:'Served customers by assisting them in product selection',
+    exp2:'Drove sales through customer engagement and product knowledge',
+    exp3:'Assembled merchandise displays'
+}
+export const workExp2 = {
     company:'Devmountain',
     position:'Student Web Developer',
     startMonth:'Oct',
@@ -20,7 +31,7 @@ export const workExp1 = {
     exp2:'Built Full Stack Applications with React.js, Node.js, Express and PostgreSQL',
     exp3:'Developed custom full-stack fitness tracking app'
 }
-export const workExp2 = {
+export const workExp3 = {
     company:'KNS International',
     position:'Events Team Lead',
     startMonth:'Sept',

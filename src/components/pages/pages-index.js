@@ -12,6 +12,7 @@ import {
   mainInfo,
   workExp1,
   workExp2,
+  workExp3,
   skills,
   projects
 } from "../Data";
@@ -46,6 +47,7 @@ const Home = () => {
           <ProfileSection {...mainInfo} />
           <ProExp {...workExp1} />
           <ProExp {...workExp2} />
+          <ProExp {...workExp3} />
           <Skills {...skills} />
           <Projects {...projects} />
           <Footer {...mainInfo}/>

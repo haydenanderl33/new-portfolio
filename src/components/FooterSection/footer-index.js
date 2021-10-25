@@ -3,7 +3,6 @@ import {
   FooterContainer,
   FooterItemsWrapper,
   Name,
-  Rights,
   SocialLinksWrapper,
   SocialLink,
   YearRightsWrapper,
