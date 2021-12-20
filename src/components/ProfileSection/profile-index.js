@@ -13,7 +13,7 @@ const Profile = ({about}) => {
   return (
     <ProfileContainer id='about'>
       <ImageWrapper>
-        <ProfileImg src={profileImg} alt='Profile Picture'/>
+        <ProfileImg src={profileImg} alt='Hayden Anderl'/>
       </ImageWrapper>
       <ProfileInfo>
           <ProfileH1>About Me</ProfileH1>
