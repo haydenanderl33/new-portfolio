@@ -6,24 +6,20 @@ import ProfileSection from "../ProfileSection/profile-index";
 import ProExp from "../ProExpSection/proExp-index";
 import Skills from "../SkillsSection/skills-index";
 import LoadingAnimation from "../LoadingAnimation/loading-index";
-import Projects from "../ProjectsSection/projects-index"
-import Footer from "../FooterSection/footer-index"
+import Projects from "../ProjectsSection/projects-index";
+import Footer from "../FooterSection/footer-index";
 import {
   mainInfo,
   workExp1,
   workExp2,
   workExp3,
   skills,
-  projects
+  projects,
 } from "../Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, isLoading] = useState(false);
-
-  // useEffect(() => {
-  //   setTimeout(() => isLoading(true), 1500);
-  // }, []);
 
   const loadingDone = () => {
     isLoading(true);
@@ -50,7 +46,7 @@ const Home = () => {
           <ProExp {...workExp3} />
           <Skills {...skills} />
           <Projects {...projects} />
-          <Footer {...mainInfo}/>
+          <Footer {...mainInfo} />
         </>
       ) : (
         <>

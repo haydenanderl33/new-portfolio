@@ -1,11 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/pages-index";
-import Contact from "./components/ContactPage/contact-index"
+import Contact from "./components/ContactPage/contact-index";
 const App = () => {
-
-  
-
   return (
     <Router>
       <Switch>
@@ -14,6 +11,6 @@ const App = () => {
       </Switch>
     </Router>
   );
-}
+};
 
 export default App;

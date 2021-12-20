@@ -28,7 +28,11 @@ export const VideoBackground = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #19323C;
+    background: linear-gradient(
+    108deg,
+    rgba(122, 130, 171, 1) 0%,
+    rgba(249, 98, 125, 1) 100%
+  );
 
 `
 export const MainContent = styled.div`
