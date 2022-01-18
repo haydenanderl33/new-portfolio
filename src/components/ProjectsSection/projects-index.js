@@ -20,16 +20,17 @@ import kauaiBeach from "../../images/kauaiBeach.jpg";
 import waves from "../../images/waves.jpg";
 // import napaliAerial from "../../images/napaliaerial.jpg";
 import duskKauai from "../../images/duskKauai.jpg";
-import muscleMemoryPreview from "../../images/muscleMemoryPreview.jpg";
+import muscleMemoryPreview from "../../images/muscleMemoryPreview.PNG";
 import instagramPreview from '../../images/instagramPreview.jpg'
 import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.jpg'
 import reactJsToDoPreview from '../../images/reactJsToDoPreview.jpg'
+
+import {FaNodeJs} from 'react-icons/fa'
 
 import {
   SiReact,
   SiRedux,
   SiPostgresql,
-  SiNodeDotJs,
   SiStripe,
   SiFirebase,
   SiTailwindcss,
@@ -64,7 +65,7 @@ projectLink4
             <IconsWrapper>
               <SiReact />
               <SiRedux />
-              <SiNodeDotJs />
+              < FaNodeJs/>
               <SiPostgresql />
               <SiStripe />
             </IconsWrapper>
