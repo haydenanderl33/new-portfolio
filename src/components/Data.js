@@ -1,11 +1,12 @@
 export const mainInfo = {
     name: 'Hayden Anderl',
-    title:'Writer. Web Developer.',
+    title:'Content/Copywriter. Web Developer.',
     initials:'HJA',
     email: 'hayden,anderl33@gmailcom',
     linkedin:'https://www.linkedin.com/in/hayden-anderl/',
     github:'https://github.com/haydenanderl33',
     instagram:'https://www.instagram.com/hayden_anderl/',
+    medium:'https://medium.com/@hayden.anderl33/build-a-full-crud-to-do-list-using-react-hooks-7a61ed09fcab',
     about:"Welcome to my portfolio site! I began my web development journey as a student at DevMountain. As a developer, I've been able to overcome challenges, grow my skill set and gain a passion for coding. I enjoy solving problems and learning new ways to develop applications."
 }
 

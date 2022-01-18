@@ -1,6 +1,7 @@
 import React from "react";
-import { FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { FaLinkedin} from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
+import {BsMedium} from 'react-icons/bs/'
 import {
   MainContainer,
   MainBackground,
@@ -13,7 +14,7 @@ import {
 } from "./main-elements";
 import Video from "../videos/video-4.mp4";
 
-const Main = ({ name, title, linkedin, github, instagram }) => {
+const Main = ({ name, title, linkedin, github, medium }) => {
   return (
     <MainContainer id="home">
       <MainBackground>
@@ -29,8 +30,8 @@ const Main = ({ name, title, linkedin, github, instagram }) => {
             <SocialMediaIconLink href={github}>
                 <AiFillGithub />
             </SocialMediaIconLink>
-            <SocialMediaIconLink href={instagram}>
-                <FaInstagram/>
+            <SocialMediaIconLink href={medium}>
+                <BsMedium/>
             </SocialMediaIconLink>
         </MainIconWrap>
       </MainContent>
@@ -39,3 +40,4 @@ const Main = ({ name, title, linkedin, github, instagram }) => {
 };
 
 export default Main;
+

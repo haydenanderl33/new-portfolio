@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ProjectsContainer = styled.div`
   height: 400px;
   position: relative;
@@ -23,7 +22,7 @@ export const ProjectImageBackground = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 `;
 export const Image = styled.img`
@@ -43,7 +42,6 @@ export const ProjectsWrapper = styled.div`
   justify-content: flex-start;
   flex-direction: row;
   color: #92dce5;
-
 `;
 
 export const ProjectDescriptionContainer = styled.div`
@@ -60,18 +58,20 @@ export const ProjectDescriptionContainer = styled.div`
 `;
 
 export const ProjectDescription = styled.p`
-font-size: 16px;
-overflow-wrap: anywhere;
+  font-weight: bold;
+  font-size: 16px;
+  overflow-wrap: anywhere;
 `;
 
 export const BuiltWithContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 export const BuiltWith = styled.p`
+  font-weight: bold;
   font-size: 16px;
-`
+`;
 
 export const IconsWrapper = styled.div`
   font-size: 36px;
@@ -90,10 +90,9 @@ export const ProjectPreviewAndLinkContainer = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-rows: repeat(2, 1fr);
-`
+`;
 export const ProjectImageWrapper = styled.a`
-
-width: 100%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -104,14 +103,14 @@ width: 100%;
     width: 100%;
   height: 100%;
   } */
-`
+`;
 export const ProjectImage = styled.img`
-object-fit: contain;
-width: 50%;
-height: 50%;
-/* padding-top: 24px; */
-border-radius: 5px;
-`
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+  /* padding-top: 24px; */
+  border-radius: 5px;
+`;
 export const ProjectLinkContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -120,16 +119,17 @@ export const ProjectLinkContainer = styled.div`
   align-items: center;
   /* padding-top: 24px; */
   /* padding: 0 16px; */
-`
+`;
 export const ProjectLink = styled.a`
-font-size: 16px;
--ms-word-break: break-all;
-     word-break: break-all;
-color: inherit;
 
-&:hover {
-      transition: all 0.2s ease-in-out;
-      color: #F9627D;
-      cursor: pointer;
-    }
-`
+  font-size: 16px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  color: inherit;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f9627d;
+    cursor: pointer;
+  }
+`;
