@@ -8,10 +8,12 @@ import {
   YearRightsWrapper,
   Year,
 } from "./footer-elements";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin} from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import {BsMedium} from 'react-icons/bs'
 
-const Footer = ({ name, linkedin, github, instagram }) => {
+
+const Footer = ({ name, linkedin, github, medium }) => {
   return (
     <FooterContainer>
       <FooterItemsWrapper>
@@ -27,8 +29,8 @@ const Footer = ({ name, linkedin, github, instagram }) => {
           <SocialLink href={github}>
             <AiFillGithub />
           </SocialLink>
-          <SocialLink href={instagram}>
-            <FaInstagram />
+          <SocialLink href={medium}>
+            <BsMedium />
           </SocialLink>
         </SocialLinksWrapper>
       </FooterItemsWrapper>
