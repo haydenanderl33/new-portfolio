@@ -7,7 +7,7 @@ import {
   ProfileH1,
   ProfileAbout
 } from "./profile-elements";
-import profileImg from '../../images/haydenprofilepic.jpg'
+import profileImg from '../../images/haydenprofilepic.webp'
 
 const Profile = ({about}) => {
   return (

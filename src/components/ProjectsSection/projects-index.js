@@ -15,15 +15,14 @@ import {
   ProjectLinkContainer,
   ProjectLink,
 } from "./projects-elements";
-import hanaleiSunset from "../../images/hanaleiSunset.jpg";
-import kauaiBeach from "../../images/kauaiBeach.jpg";
-import waves from "../../images/waves.jpg";
-// import napaliAerial from "../../images/napaliaerial.jpg";
-import duskKauai from "../../images/duskKauai.jpg";
-import muscleMemoryPreview from "../../images/muscleMemoryPreview.PNG";
-import instagramPreview from '../../images/instagramPreview.jpg'
-import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.jpg'
-import reactJsToDoPreview from '../../images/reactJsToDoPreview.jpg'
+import hanaleiSunset from "../../images/hanaleiSunset.webp";
+import kauaiBeach from "../../images/kauaiBeach.webp";
+import waves from "../../images/waves.webp";
+import duskKauai from "../../images/duskKauai.webp";
+import muscleMemoryPreview from "../../images/muscleMemoryPreview.webp";
+import instagramPreview from '../../images/instagramPreview.webp'
+import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.webp'
+import reactJsToDoPreview from '../../images/reactJsToDoPreview.webp'
 
 import {FaNodeJs} from 'react-icons/fa'
 
@@ -54,7 +53,7 @@ projectLink4
     <>
       <ProjectsContainer id="projects">
         <ProjectImageBackground>
-          <Image src={hanaleiSunset} />
+          <Image src={hanaleiSunset} alt="hanaleiSunset" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
@@ -72,7 +71,7 @@ projectLink4
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink1}>
-              <ProjectImage src={muscleMemoryPreview} />
+              <ProjectImage src={muscleMemoryPreview} alt="muscleMemoryPreview" />
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink1}>{projectLink1}</ProjectLink>
@@ -82,7 +81,7 @@ projectLink4
       </ProjectsContainer>
       <ProjectsContainer>
         <ProjectImageBackground>
-          <Image src={kauaiBeach} />
+          <Image src={kauaiBeach} alt="kauaiBeach" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
@@ -98,7 +97,7 @@ projectLink4
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink2}>
-              <ProjectImage src={instagramPreview} />
+              <ProjectImage src={instagramPreview} alt="instagramPreview" />
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink2}>{projectLink2}</ProjectLink>
@@ -108,7 +107,7 @@ projectLink4
       </ProjectsContainer>
       <ProjectsContainer>
         <ProjectImageBackground>
-          <Image src={waves} />
+          <Image src={waves}alt="waves" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
@@ -124,7 +123,7 @@ projectLink4
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink3}>
-              <ProjectImage src={reactJsToDoPreview} />
+              <ProjectImage src={reactJsToDoPreview} alt="reactJsToDoPreview" />
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink3}>{projectLink3}</ProjectLink>
@@ -134,7 +133,7 @@ projectLink4
       </ProjectsContainer>
       <ProjectsContainer>
         <ProjectImageBackground>
-          <Image src={duskKauai} />
+          <Image src={duskKauai} alt="duskKauai" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
@@ -150,7 +149,7 @@ projectLink4
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink4}>
-              <ProjectImage src={vanillaJsTodoPreview} />
+              <ProjectImage src={vanillaJsTodoPreview} alt="vanillaJsTodoPreview"/>
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink4}>{projectLink4}</ProjectLink>
