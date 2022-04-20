@@ -20,11 +20,13 @@ import kauaiBeach from "../../images/kauaiBeach.webp";
 import waves from "../../images/waves.webp";
 import duskKauai from "../../images/duskKauai.webp";
 import muscleMemoryPreview from "../../images/muscleMemoryPreview.webp";
-import instagramPreview from '../../images/instagramPreview.webp'
-import vanillaJsTodoPreview from '../../images/vanillaJsTodoPreview.webp'
-import reactJsToDoPreview from '../../images/reactJsToDoPreview.webp'
+import instagramPreview from "../../images/instagramPreview.webp";
+import vanillaJsTodoPreview from "../../images/vanillaJsTodoPreview.webp";
+import reactJsToDoPreview from "../../images/reactJsToDoPreview.webp";
+import wordskiPreview from "../../images/wordskiPreview.webp";
+import stairwayToHeaven from '../../images/stairwayToHeaven.webp'
 
-import {FaNodeJs} from 'react-icons/fa'
+import { FaNodeJs } from "react-icons/fa";
 
 import {
   SiReact,
@@ -35,43 +37,73 @@ import {
   SiTailwindcss,
   SiHtml5,
   SiCss3,
-  SiJavascript
+  SiJavascript,
 } from "react-icons/si";
 
 const Projects = ({
-projectDescription1,
-projectLink1,
-projectDescription2,
-projectLink2,
-projectDescription3,
-projectLink3,
-projectDescription4,
-projectLink4
-
+  projectDescription1,
+  projectLink1,
+  projectDescription2,
+  projectLink2,
+  projectDescription3,
+  projectLink3,
+  projectDescription4,
+  projectLink4,
+  projectDescription5,
+  projectLink5,
 }) => {
   return (
     <>
+      <ProjectsContainer id="projects">
+        <ProjectImageBackground>
+          <Image style={{objectPosition: 'center'}} src={stairwayToHeaven} alt="stairwayToHeaven" />
+        </ProjectImageBackground>
+        <ProjectsWrapper>
+          <ProjectDescriptionContainer>
+            <ProjectDescription>{projectDescription5}</ProjectDescription>
+            <BuiltWithContainer>
+              <BuiltWith>Built with:</BuiltWith>
+            </BuiltWithContainer>
+            <IconsWrapper>
+              <SiReact />
+              <SiCss3 />
+              <SiFirebase />
+            </IconsWrapper>
+          </ProjectDescriptionContainer>
+          <ProjectPreviewAndLinkContainer>
+            <ProjectImageWrapper href={projectLink5}>
+              <ProjectImage src={wordskiPreview} alt="wordskiPreview" />
+            </ProjectImageWrapper>
+            <ProjectLinkContainer>
+              <ProjectLink href={projectLink5}>{projectLink5}</ProjectLink>
+            </ProjectLinkContainer>
+          </ProjectPreviewAndLinkContainer>
+        </ProjectsWrapper>
+      </ProjectsContainer>
       <ProjectsContainer id="projects">
         <ProjectImageBackground>
           <Image src={hanaleiSunset} alt="hanaleiSunset" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
-              <ProjectDescription>{projectDescription1}</ProjectDescription>
+            <ProjectDescription>{projectDescription1}</ProjectDescription>
             <BuiltWithContainer>
               <BuiltWith>Built with:</BuiltWith>
             </BuiltWithContainer>
             <IconsWrapper>
               <SiReact />
               <SiRedux />
-              < FaNodeJs/>
+              <FaNodeJs />
               <SiPostgresql />
               <SiStripe />
             </IconsWrapper>
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink1}>
-              <ProjectImage src={muscleMemoryPreview} alt="muscleMemoryPreview" />
+              <ProjectImage
+                src={muscleMemoryPreview}
+                alt="muscleMemoryPreview"
+              />
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink1}>{projectLink1}</ProjectLink>
@@ -85,14 +117,14 @@ projectLink4
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
-              <ProjectDescription>{projectDescription2}</ProjectDescription>
+            <ProjectDescription>{projectDescription2}</ProjectDescription>
             <BuiltWithContainer>
               <BuiltWith>Built with:</BuiltWith>
             </BuiltWithContainer>
             <IconsWrapper>
               <SiReact />
               <SiTailwindcss />
-              <SiFirebase/>
+              <SiFirebase />
             </IconsWrapper>
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
@@ -107,18 +139,18 @@ projectLink4
       </ProjectsContainer>
       <ProjectsContainer>
         <ProjectImageBackground>
-          <Image src={waves}alt="waves" />
+          <Image src={waves} alt="waves" />
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
-              <ProjectDescription>{projectDescription3}</ProjectDescription>
+            <ProjectDescription>{projectDescription3}</ProjectDescription>
             <BuiltWithContainer>
               <BuiltWith>Built with:</BuiltWith>
             </BuiltWithContainer>
             <IconsWrapper>
-              <SiReact/>
+              <SiReact />
               <SiCss3 />
-              <SiJavascript/>
+              <SiJavascript />
             </IconsWrapper>
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
@@ -137,19 +169,22 @@ projectLink4
         </ProjectImageBackground>
         <ProjectsWrapper>
           <ProjectDescriptionContainer>
-              <ProjectDescription>{projectDescription4}</ProjectDescription>
+            <ProjectDescription>{projectDescription4}</ProjectDescription>
             <BuiltWithContainer>
               <BuiltWith>Built with:</BuiltWith>
             </BuiltWithContainer>
             <IconsWrapper>
-              <SiHtml5/>
+              <SiHtml5 />
               <SiCss3 />
-              <SiJavascript/>
+              <SiJavascript />
             </IconsWrapper>
           </ProjectDescriptionContainer>
           <ProjectPreviewAndLinkContainer>
             <ProjectImageWrapper href={projectLink4}>
-              <ProjectImage src={vanillaJsTodoPreview} alt="vanillaJsTodoPreview"/>
+              <ProjectImage
+                src={vanillaJsTodoPreview}
+                alt="vanillaJsTodoPreview"
+              />
             </ProjectImageWrapper>
             <ProjectLinkContainer>
               <ProjectLink href={projectLink4}>{projectLink4}</ProjectLink>

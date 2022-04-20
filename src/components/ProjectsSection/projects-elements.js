@@ -77,8 +77,7 @@ export const IconsWrapper = styled.div`
   font-size: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-evenly;
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
@@ -121,7 +120,6 @@ export const ProjectLinkContainer = styled.div`
   /* padding: 0 16px; */
 `;
 export const ProjectLink = styled.a`
-
   font-size: 16px;
   -ms-word-break: break-all;
   word-break: break-all;
