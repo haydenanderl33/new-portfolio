@@ -72,7 +72,7 @@ export const ProExpDescriptionContainer = styled.div`
     width: 100%;
     padding: 54px 0 0 0; 
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
   }
 `;
 

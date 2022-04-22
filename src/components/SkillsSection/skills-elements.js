@@ -32,6 +32,7 @@ font-size: 16px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center ;
 &:hover {
     transition: all 0.4s ease-in-out;
     color: #f9627d;
@@ -39,6 +40,7 @@ align-items: center;
   }
   @media screen and (max-width: 768px) {
     font-size: 12px;
+    justify-content: center ;
   }
 
 `

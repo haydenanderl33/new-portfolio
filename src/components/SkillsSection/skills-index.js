@@ -19,7 +19,7 @@ import {
   SiNginx,
   SiDigitalocean,
   SiStripe,
-  // SiStyledComponents,
+  SiStyledcomponents,
   SiGithub,
 } from "react-icons/si";
 
@@ -235,12 +235,12 @@ const Skills = ({
         </SkillsListItem2>
         <SkillsListItem1>
           <LogoAndText>
-            {/* <SiStyledComponents
+            <SiStyledcomponents
               style={{
                 fontSize: `${LogoAndTextFontSize}px`,
                 marginBottom: "4px",
               }}
-            /> */}
+            />
             {skill17}
           </LogoAndText>
         </SkillsListItem1>
