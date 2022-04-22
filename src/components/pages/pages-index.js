@@ -7,6 +7,7 @@ import ProExp from "../ProExpSection/proExp-index";
 import Skills from "../SkillsSection/skills-index";
 import LoadingAnimation from "../LoadingAnimation/loading-index";
 import Projects from "../ProjectsSection/projects-index";
+import  Resume  from "../ResumeSection/resume-index";
 import Footer from "../FooterSection/footer-index";
 import {
   mainInfo,
@@ -46,6 +47,7 @@ const Home = () => {
           <ProExp {...workExp3} />
           <Skills {...skills} />
           <Projects {...projects} />
+          <Resume/>
           <Footer {...mainInfo} />
         </>
       ) : (

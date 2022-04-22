@@ -11,7 +11,6 @@ export const ProExpContainer = styled.div`
   border-width: 4px;
   border-style: solid;
   border-color: #92DCE5;
-  box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

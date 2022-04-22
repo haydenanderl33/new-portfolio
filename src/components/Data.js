@@ -69,7 +69,7 @@ export const skills = {
 
 export const projects = {
   projectLink1: "http://musclememory.me/#/",
-  projectDescription1: "Fitness Tracking Application",
+  projectDescription1: "Fitness Tracking App",
 
   projectLink2: "https://instagram-96974.firebaseapp.com/",
   projectDescription2: "Instagram Clone",

@@ -7,10 +7,12 @@ import {
   SocialLink,
   YearRightsWrapper,
   Year,
+  
 } from "./footer-elements";
 import { FaLinkedin} from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import {BsMedium} from 'react-icons/bs'
+import resumePDF from '../../../src/Hayden Anderl 2022 Resume.pdf'
 
 
 const Footer = ({ name, linkedin, github, medium }) => {
@@ -18,7 +20,9 @@ const Footer = ({ name, linkedin, github, medium }) => {
     <FooterContainer>
       <FooterItemsWrapper>
         <Name to='home' smooth={true} duration={1000} spy={true} exact={'true'} >{name}</Name>
+        
         <YearRightsWrapper>
+        {/* <a href={resumePDF}>Click here for my pdf</a> */}
           {/* <Rights>©</Rights> */}
           <Year>{new Date().getFullYear()}</Year>
         </YearRightsWrapper>

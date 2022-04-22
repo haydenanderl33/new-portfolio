@@ -26,6 +26,8 @@ export const Name = styled(LinkScroll)`
     color: #92dce5;
   }
 `;
+
+
 export const YearRightsWrapper = styled.div`
   height: 40px;
   width: 80px;
