@@ -12,7 +12,6 @@ import {
 import { FaLinkedin} from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import {BsMedium} from 'react-icons/bs'
-import resumePDF from '../../../src/Hayden Anderl 2022 Resume.pdf'
 
 
 const Footer = ({ name, linkedin, github, medium }) => {
